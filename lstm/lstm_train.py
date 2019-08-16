@@ -262,7 +262,7 @@ f_12 = open('../data/test/y_train.txt', 'w', encoding='utf-8')
 for line in y_train:   
     f_12.write(str(line))
     f_12.write('\n')
-f_12.open()
+f_12.close()
 
 print ("训练集：",x_train.shape,"，训练集标签：",y_train.shape)
 print ("测试集：",x_test.shape,"，测试集标签：",y_test.shape)
